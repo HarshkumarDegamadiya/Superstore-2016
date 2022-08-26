@@ -1,18 +1,19 @@
 #### Superstore 2016 
+# https://app.powerbi.com/groups/me/reports/92832fb1-1d5c-4cdc-bee3-52b0d82b97e6/ReportSection
  
-I imported the superstore 2016 xlxs into powerbi.
-I created new table called DateTime and inserted function 
-DateTime = ADDCOLUMNS(CALENDAR(MIN(Orders[Order Date]), MAX(Orders[Order Date])), "Day", DAY([Date]), "Month", FORMAT([Date],"MMM"), "Year", FORMAT([Date],"YYYY"))
+I imported the superstore 2016 xlxs into powerbi.<br />
+I created new table called DateTime and inserted function <br />
+DateTime = ADDCOLUMNS(CALENDAR(MIN(Orders[Order Date]), MAX(Orders[Order Date])), "Day", DAY([Date]), "Month", FORMAT([Date],"MMM"), "Year", FORMAT([Date],"YYYY"))<br/>
 For defining date month year from order date
 I added New column called deliver days 
-Deliver Days = DATEDIFF( Orders[Order Date],Orders[Ship Date],DAY)
+Deliver Days = DATEDIFF( Orders[Order Date],Orders[Ship Date],DAY)<br />
 
 
-After that I inserted textbox and Write that Superstore and sales analysis  for just heading purpose
-I inserted few cards  from visualization in dash board and format that cards like changing the background opacity and color of fonts to white
-1)Sales
-2)Profit 
-3)Quality 
+After that I inserted textbox and Write that Superstore and sales analysis  for just heading purpose<br /><br />
+I inserted few cards  from visualization in dash board and format that cards like changing the background opacity and color of fonts to white<br />
+1)Salesc<br />
+2)Profit <br />
+3)Quality <br />
 Then I added two slicer for order date and ship date and also change their backgground opacity to 100 and resize the boxes to set to the dashboard.
 Then I added map visualization and  put stare in location and put country in legend and format it like map setting I choose dark and choose title off and tooltips on for the map.
 Then I added donut chart and put segment in legend and sales in values and also formatted this by background transparency 100 and title to mid and tooltip on.
